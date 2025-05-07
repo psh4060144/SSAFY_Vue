@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="app">
+    <p>count: <span>{{ cnt }}</span></p>
+    <button v-on:click="increase">count up!</button><br>
+    <button @click="decrease">count down!</button>
+  </div>
+
+
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+
+    const { createApp, ref } = Vue
+    const app = createApp({
+      setup () {
+        const cnt = ref(0)  // 반응형 객체 사용
+        const increase = function () {
+          cnt.value += 1
+          console.log(cnt)
+        }
+        const decrease = function () {
+          cnt.value -= 1
+          console.log(cnt)
+        }
+        return {
+          cnt, increase, decrease
+        }
+      }
+    })
+    app.mount('#app')
+
+  </script>
+
+
+</body>
+</html>

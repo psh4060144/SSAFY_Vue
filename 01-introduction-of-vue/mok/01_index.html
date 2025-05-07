@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <p>Count: <span id="num">0</span></p>
+  <button id="plus">count up!</button>
+  <button id="minus">count down!</button>
+
+  <script>
+
+    /////////////////////////////////////////////////////////////////////////////
+    const buttonPlus = document.querySelector('#plus')
+    const buttonMinus = document.querySelector('#minus')
+    let myNum = 0
+    buttonPlus.addEventListener('click', function () {
+      const spanTag = document.querySelector('#num')
+      let num = Number(spanTag.textContent)
+      num += 1
+      spanTag.textContent = num
+      myNum = num
+      console.log(myNum)
+    })
+    buttonMinus.addEventListener('click', function () {
+      myNum -= 1
+      console.log(myNum)
+    })
+    //////////////////////////////////////////////////// 이런 귀찮은 짓거리 안하도록 해주는 게 Vue.
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="app">  <!-- Vue 객체와 연결되는 html 요소는 div 로 생성 -->
+    {{ message }}
+  </div>
+  
+
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+
+    // Vue 객체
+    const { createApp, ref } = Vue
+    const app = createApp({
+      // 필요한 데이터, 함수, 옵션 선언 >> composition 방식 사용
+      setup () {  // setup 함수는 html 요소에서 사용할 변수, 함수 등을 반드시 return 해야 함.
+        const message = 'hello, Vue!'
+        return {
+          message, 
+        }
+      }
+    })
+    app.mount('#app')
+
+  </script>
+
+</body>
+</html>

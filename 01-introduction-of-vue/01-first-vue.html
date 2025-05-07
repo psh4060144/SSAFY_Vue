@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Vue 의 instance 로 관리 -->
+  <div id="app">
+    <p>{{ message }}</p>
+    <button v-on:click="count++">Count is {{ count }}</button>
+  </div>
+
+  <div id="app-2">
+    <h1>{{ username }}</h1>
+  </div>
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    // console.log(Vue)
+    // Vue.createApp()
+    // const createApp = Vue.createApp
+    // console.log(createApp)
+    // const ref = Vue.ref
+    const { createApp, ref } = Vue
+    const app = createApp({
+      // setup: function () {}
+      setup () {
+        // 상태 관리
+        // object 하나를 return
+        const message = 'hello, Vue!'
+        // 사용자와의 상호작용으로 변경되거나 관리해야 하는 상태는
+        // 반응성 객체를 사용해서 별도로 관리.
+        // Vue 가 가지고 있는 ref 를 사용해서 변수를 선언
+        const count = ref(0)
+        return {
+          // message: message
+          message,
+          count
+        }
+      }
+    })
+
+    // id 가 app 인 영역에 마운트.
+    app.mount('#app')
+
+    const app2 = createApp({
+      setup () {
+        const username = ref('Alice')
+        return {
+          username
+        }
+      }
+    })
+
+    app2.mount('#app-2')
+  </script>
+</body>
+</html>
