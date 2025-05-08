@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red-text {
+      color: red;
+    }
+    .text-bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="app">
+    <p v-bind:class="'red-text text-bold'">안녕하세요</p>
+    <hr>
+    <p v-bind:class="[{[redTextClass]:isRedText}, {[textBoldClass]:isTextBold}]">안녕하세요</p>
+    <button @click="toggleColor">색상 토글</button>
+    <button @click="toggleWeight">굵기 토글</button>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+
+    const { createApp, ref } = Vue
+    const app = createApp ({
+      setup () {
+        const redTextClass = ref('red-text')
+        const textBoldClass = ref('text-bold')
+        const isRedText = ref(true)
+        const isTextBold = ref(true)
+        const toggleColor = function () {
+          isRedText.value = !isRedText.value
+        }
+        const toggleWeight = function () {
+          isTextBold.value = !isTextBold.value
+        }
+        return {
+          redTextClass, textBoldClass, isRedText, isTextBold, toggleColor, toggleWeight
+        }
+      }
+    })
+    app.mount('#app')
+
+  </script>
+
+</body>
+</html>

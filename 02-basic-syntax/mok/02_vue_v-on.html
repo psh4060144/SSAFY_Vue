@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="message">
+    <hr>
+    {{ message }}
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+
+    // 매우 중요!!
+    // event.preventDefault() === v-on:submit.prevent
+    // 매우 중요!!
+
+    const { createApp, ref } = Vue
+    const app = createApp ({
+      setup () {
+        const message = ref('hello, Vue!')
+        return {
+          message
+        }
+      }
+    })
+    app.mount('#app')
+
+  </script>
+</body>
+</html>
