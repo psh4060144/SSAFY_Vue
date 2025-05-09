@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Todo Application</h1>
+    <h3>Completed Count : <span>갯수</span></h3>
+    <select v-model="selectedOption">
+      <option value="all">전체</option>
+      <option value="inProgress">진행중</option>
+      <option value="completed">완료</option>
+    </select>
+    <form @submit.prevent="onSubmit">
+      <input type="text" v-model="inputContent">
+      <input type="submit" value="add">
+    </form>
+    <ul>
+      <li v-for="todo in computedTodos" :key="todo.id" :id="todo.id">
+        <input type="checkbox" v-model="todo.isCompleted">
+        <span :class="{'completed': todo.isCompleted}">{{ todo.content }}</span>
+        <button @click="onDelete(todo.id)">delete</button>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref, computed } = Vue
+    const app = createApp ({
+      setup () {
+        let sequence = 0
+        const inputContent = ref('')
+        const selectedOption = ref('all')
+        const todos = ref([
+          { isCompleted: false, content: '할 일 1', id: 1 },
+          { isCompleted: true, content: '할 일 2', id: 2 },
+          { isCompleted: false, content: '할 일 3', id: 3 },
+        ])
+        const onSubmit = function () {
+          const newTodo = {
+            id: sequence++, isCompleted: false, content: inputContent.value
+          }
+          inputContent.value = ''
+          todos.value.push(newTodo)
+        }
+        const onDelete = function (id) {
+          todos.value = todos.value.filter(function (todo) {
+            return todo.id != id
+          })
+        }
+        const computedTodos = computed (function () {
+          // all, inProgress, completed
+          if (selectedOption.value == 'all') {
+            return todos.value
+          } else if (selectedOption.value == 'inProgress') {
+            return todos.value.filter(function (todo) {
+              return !todo.isCompleted
+            })
+          } else {
+            return todos.value.filter(function (todo) {
+              return todo.isCompleted
+            })
+          }
+        })
+        return {
+          todos, inputContent, computedTodos, selectedOption, 
+          onSubmit, onDelete, 
+        }
+      }
+    })
+    app.mount('#app')
+  </script>
+</body>
+</html>
