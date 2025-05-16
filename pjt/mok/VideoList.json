@@ -1,0 +1,182 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "Qi3XEkMe0lpJSFuVePDpv1OHptg",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+    "totalResults": 573270,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ktrdNTrWJvFW5VPwRQusetzYAJY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "vQC9Hx2kiA4"
+      },
+      "snippet": {
+        "publishedAt": "2025-04-29T11:57:53Z",
+        "channelId": "UC_XI3ByFO1uZIIH-g-zJZiw",
+        "title": "SSAFY 마이스터고 트랙의 하루",
+        "description": "대한민국 청년 누구나! SSAFY 13기부터 함께한 마이스터고 트랙 마이스터고 트랙 교육생들의 하루가 궁금하다면?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vQC9Hx2kiA4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vQC9Hx2kiA4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vQC9Hx2kiA4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "삼성청년SW·AI아카데미 Youtube채널 HELLOSSAFY ",
+        "liveBroadcastContent": "none",
+        "publishTime": "2025-04-29T11:57:53Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kDoIf-8Dj8G6fnGaStwCTuzSHpw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0yLIjvFFwN8"
+      },
+      "snippet": {
+        "publishedAt": "2024-06-03T15:02:04Z",
+        "channelId": "UC6PzcET4650DPggClcgO5vA",
+        "title": "싸피(SSAFY)하면 진짜 삼성 개발자로 취업이 될까?",
+        "description": "안녕하세요. 직업 찍먹입니다   이번 편은 삼성 SW 취업 연계 프로그램 싸피 SSAFY 편입니다. #싸피 #SSAFY #직업추천 #개발자 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0yLIjvFFwN8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0yLIjvFFwN8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0yLIjvFFwN8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "직업 찍먹",
+        "liveBroadcastContent": "none",
+        "publishTime": "2024-06-03T15:02:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "TidBCSu9ckU9tbigj4HCR-cvz3Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dR2iFEKE6yQ"
+      },
+      "snippet": {
+        "publishedAt": "2024-10-15T03:00:26Z",
+        "channelId": "UCUSutf0oiFW0xZmzvrH4slQ",
+        "title": "SSAFY(싸피), 당신이 몰랐던 5가지 사실 part 1 | SSAFY(싸피)",
+        "description": "shorts #ssafy.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dR2iFEKE6yQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dR2iFEKE6yQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dR2iFEKE6yQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "너드 애니멀즈 | Nerd Animals",
+        "liveBroadcastContent": "none",
+        "publishTime": "2024-10-15T03:00:26Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hEeHE13m4J7mVgEvOMFwn7tytB8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "uAWvO0NqDAU"
+      },
+      "snippet": {
+        "publishedAt": "2025-04-29T12:11:18Z",
+        "channelId": "UC_XI3ByFO1uZIIH-g-zJZiw",
+        "title": "SSAFY 3개월 차, 어떤 변화가 있을까?",
+        "description": "SSAFY에 들어온지 어느덧 3달차 3개월 후의 변화가 궁금하다면?! ========================================== [삼성 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uAWvO0NqDAU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uAWvO0NqDAU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uAWvO0NqDAU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "삼성청년SW·AI아카데미 Youtube채널 HELLOSSAFY ",
+        "liveBroadcastContent": "none",
+        "publishTime": "2025-04-29T12:11:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "0LXFY25iwn20iW29bA1ArQtYCes",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "PsgOK1YdMdc"
+      },
+      "snippet": {
+        "publishedAt": "2025-03-20T01:39:20Z",
+        "channelId": "UCoQD2xsqwzJA93PTIYERokg",
+        "title": "이재용 회장이 직접 안내해주시는 삼성 SSAFY 아카데미👀",
+        "description": "SSAFY #이재명 #이재용 #청년취업지원 #삼성 #더불어민주당.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PsgOK1YdMdc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PsgOK1YdMdc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PsgOK1YdMdc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "델리민주 [더불어민주당]",
+        "liveBroadcastContent": "none",
+        "publishTime": "2025-03-20T01:39:20Z"
+      }
+    }
+  ]
+}
